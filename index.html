@@ -17,15 +17,16 @@
 
 <body>
     <div class="container">
-        <h1>Non-Scientific Calculator</h1>
+
+        <a href="https://github.com/ViccyAce"> Non-Scientific Calculator Link</a>
 
         <table class="calculator">
             <tr>
                 <td colspan="4">
-                    <input type="text" id="result" class="screen" />
+                    <input type="text" id="result" class="screen" placeholder="0" />
                 </td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td>
                     <input type="button" value="AC" onclick="clearScreen()" class="clearbutton" />
                 </td>
@@ -38,7 +39,7 @@
                 <td>
                     <input type="button" value="%" onclick="display('%')" class="operator" />
                 </td>
-            </tr>
+            </tr> -->
             <tr>
                 <td>
                     <input type="button" value="7" onclick="display('7')" class="number" />
@@ -50,7 +51,7 @@
                     <input type="button" value="9" onclick="display('9')" class="number" />
                 </td>
                 <td>
-                    <input type="button" value="/" onclick="display('/')" class="operator" />
+                    <input type="button" value="÷" onclick="display('÷')" class="operator" />
                 </td>
             </tr>
             <tr>
@@ -64,7 +65,7 @@
                     <input type="button" value="6" onclick="display('6')" class="number" />
                 </td>
                 <td>
-                    <input type="button" value="*" onclick="display('*')" class="operator" />
+                    <input type="button" value="x" onclick="display('*')" class="operator" />
                 </td>
             </tr>
             <tr>
@@ -89,11 +90,12 @@
                     <input type="button" value="." onclick="display('.')" class="number" />
                 </td>
                 <td>
-                    <input type="button" value="=" onclick="calculate()" class="operator" />
-                </td>
-                <td>
                     <input type="button" value="+" onclick="display('+')" class="operator" />
                 </td>
+                <td>
+                    <input type="button" value="=" onclick="calculate()" class="equal" />
+                </td>
+
             </tr>
         </table>
     </div>
